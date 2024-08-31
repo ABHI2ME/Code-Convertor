@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="nav-bar-logo">
+            <img src="images/logo1.png" class="nav-bar-logo">
+                <span class="nav-bar-logo-text">CODE<sub>me</sub></span>
+        </div>
+        <div class="nav-bar-links">
+              <a class="nav-bar-links-git">Github</a>
+              <a class="nav-bar-links-twitter">Twitter</a>
+              <a class="nav-bar-links-about">About</a>
+        </div>
+      </div>
+      
+      <!-- convert button and rest button div  -->
+       <div class="hero-convert">
+           <div class="hero-convert-btn">
+                <button class="hero-convert-code-btn">Convert</button>
+                <select class="hero-convert-btn-select">
+                     <option value="Javascript">Javascript</option>
+                     <option value="c++">C++</option>
+                     <option value="java">Java</option>
+                     <option value="python">Python</option>
+                     <option value="C">C</option>
+                     
+                </select>
+           </div>
+       </div>
+
+       <!-- main code input editor -->
+        <div class="code-convertor">
+            <div class="code-convertor-editor">
+                <textarea class="code-convertor-editor-input" spellcheck="false" placeholder="//enter your code here//"></textarea>
+            </div>
+            <div class="code-convertor-spinner">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                  </div>
+            </div>
+            <div class="code-convertor-output">
+              <textarea class="code-convertor-editor-output" spellcheck="false" placeholder="//your output here//"></textarea>
+            </div>
+        </div>
+
+
+</div>
+    
+    <script type="module" src="src/main.js"></script>
+    
+  </body>
+</html>
