@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1tUgbLsmOKF-hdALCA403xJmMGhSp9BEZ/view?usp=drive
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variables to your .env file  . You can create your api key from google gemini . 
 
 `VITE_API_KEY`
 
