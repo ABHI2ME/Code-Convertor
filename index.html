@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script src="https://kit.fontawesome.com/ced6361fc6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -14,9 +15,9 @@
                 <span class="nav-bar-logo-text">CODE<sub>me</sub></span>
         </div>
         <div class="nav-bar-links">
-              <a class="nav-bar-links-git">Github</a>
-              <a class="nav-bar-links-twitter">Twitter</a>
-              <a class="nav-bar-links-about">About</a>
+              <a href="https://github.com/ABHI2ME" target="_blank" class="nav-bar-links-git">Github</a>
+              <a href="https://x.com/Abhi_2me?t=Ezdi4HEus2uy4lTDkfseUQ&s=09" target="_blank" class="nav-bar-links-twitter">Twitter</a>
+              <a href="https://github.com/ABHI2ME/Code-Convertor" target="_blank" class="nav-bar-links-about">About</a>
         </div>
       </div>
       
@@ -49,9 +50,15 @@
                   </div>
             </div>
             <div class="code-convertor-output">
-              <textarea class="code-convertor-editor-output" spellcheck="false" placeholder="//your output here//"></textarea>
+              <div class="code-convertor-output-btn">
+                <i class="fa-solid fa-copy" style="color: #ffffff;"></i>
+              </div>
+              <textarea class="code-convertor-editor-output" spellcheck="false" readonly placeholder="//your output here//"></textarea>
             </div>
         </div>
+        <footer class="footer">
+           <div class="footer-div">Made with <span><i class="fa-solid fa-heart" style="color: #ff0000;"></i></span> by Abhishek singh </div>
+        </footer>
 
 
 </div>

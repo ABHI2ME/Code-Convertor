@@ -1,6 +1,7 @@
 import './style.css'
 
 const apiKey = import.meta.env.VITE_API_KEY;
+const copyBtn = document.querySelector('.code-convertor-output-btn') ;
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 // require('dotenv').config(); 
@@ -42,4 +43,24 @@ async function callGemini(inputValue , codeLan){
 
     console.log(result.response.text());
 
+}
+
+window.onload = function(){
+    copyBtn.addEventListener('click' , ()=>{
+         const textToCopy = output.value ;
+         if(textToCopy != ""){
+            const copyContent = async () => {
+                try {
+                  await navigator.clipboard.writeText(textToCopy);
+                  copyBtn.
+                  console.log('Content copied to clipboard');
+                } catch (err) {
+                  console.error('Failed to copy: ', err);
+                }
+              }
+         }
+         else{
+            console.log("nothing to copy") ;
+         }
+    })
 }
